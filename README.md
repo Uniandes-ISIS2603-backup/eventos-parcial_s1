@@ -39,20 +39,20 @@ Ejecutar el programa y probar en postman el servicio:
 
 a. Ingresar el siguiente json: 
 
-```{ 
+`{ 
   "name": "El hombre Elefante",
   "tipo": "1-Musical"
-}```
+}`
 
 Guarde una pantalla del resultado en  un archivo llamado postok.jpg en la carpeta
  `images` en el proyecto raiz.
 
 b. Ingresar el siguiente json;
 
-```{ 
+`{ 
   "name": "El hombre Elefante",
   "tipo": "Teatro"
-}```
+}`
 
 Guarde una pantalla del resultado en  un archivo llamado postnook.jpg en la carpeta
  `images` en el proyecto raiz.
@@ -65,13 +65,13 @@ Ud. debe extender su programa para que cuando ejecute
 
 con el json:
 
-```{ 
+`{ 
   "name": "Suenan las campanas",
   "tipo": "1-Musical",
   "ciudad": {
               "name": "Bogota"
             }
-}```
+}`
 
 Se cree el evento con la información de la ciudad. 
 
@@ -82,19 +82,19 @@ Para esto Ud. debe:
 En la clase CiudadDTO, además de tener un constructor sin parámetros, 
 para convertir una CiudadEntity en una CiudadDTO defina el siguiente constructor:
 
-```public CiudadDTO(CiudadEntity ciudad) {
+public CiudadDTO(CiudadEntity ciudad) {
         this.id = evento.getId();
         this.name = evento.getName();
-    }```
+    }
 
 Para convertir una CiudadDTO  en una CiudadEntity defina el siguiente método:
 
-```public CiudadEntity toEntity() {
+public CiudadEntity toEntity() {
         CiudadEntity entity = new CiudadEntity();
         entity.setId(this.id);
         entity.setName(this.name);      
         return entity;
-    }```
+    }
 
 2. Defina un atributo nuevo en EventoDetailDTO que representa la ciudad donde 
 se presenta el evento. Defina set/get y actualice los demás métodos con el nuevo 
@@ -112,13 +112,13 @@ a. `POST localhost:8080/eventos-web/api/eventos`
 
 con el json:
 
-```{ 
+`{ 
   "name": "Suenan las campanas",
   "tipo": "1-Musical",
   "ciudad": {
               "name": "Bogota"
             }
-}```
+}`
 
 b. Fijese en el id que retornó el POST y Ejecute 
 
