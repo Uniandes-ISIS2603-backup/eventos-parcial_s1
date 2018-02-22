@@ -3,7 +3,8 @@
 
 1. Abra los proyectos en Netbeans
 
-2. En Netbeans Vaya a Services, Databases, JavaDB y cree una base de datos que se llame eventoDB (los dem´s campos dejelos en blanco)
+2. En Netbeans Vaya a Services, Databases, JavaDB y cree una base de datos que se 
+llame eventoDB (los demás campos dejelos en blanco)
 
 
 
@@ -82,17 +83,24 @@ Para esto Ud. debe:
 En la clase CiudadDTO, además de tener un constructor sin parámetros, 
 para convertir una CiudadEntity en una CiudadDTO defina el siguiente constructor:
 
-public CiudadDTO(CiudadEntity ciudad) {
+ public CiudadDTO(CiudadEntity ciudad) {
+
         this.id = evento.getId();
+
         this.name = evento.getName();
+
     }
 
 Para convertir una CiudadDTO  en una CiudadEntity defina el siguiente método:
 
-public CiudadEntity toEntity() {
+ public CiudadEntity toEntity() {
+
         CiudadEntity entity = new CiudadEntity();
+
         entity.setId(this.id);
-        entity.setName(this.name);      
+
+        entity.setName(this.name);  
+    
         return entity;
     }
 
@@ -105,6 +113,11 @@ a uno (ManyToOne). Para lograr que cuando se cree el evento se cree también la 
 la anotación debe tener la propiedad de:
 
 cascade = CascadeType.ALL
+
+**IMPORTANTE: Antes de volver a ejecutar con la nueva relación, vaya a Services, 
+Databases, JavaDB y borre (delete) base de datos que se 
+llame eventoDB. Después, Vuelva a  crear una base de datos que se 
+llame eventoDB (los demás campos dejelos en blanco)**
 
 4. Ejecute 
 

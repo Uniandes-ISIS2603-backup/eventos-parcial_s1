@@ -34,7 +34,6 @@ import co.edu.uniandes.csw.eventos.entities.EventoEntity;
  */
 public class EventoDetailDTO extends EventoDTO {
 
-    
     /**
      * Constructor por defecto
      */
@@ -50,8 +49,6 @@ public class EventoDetailDTO extends EventoDTO {
     public EventoDetailDTO(EventoEntity entity) {
         super(entity);
 
-        //   if (entity.getXyzs()!= null)
-        //  this.xyz = new XYZDTO(entity.getXyzs());
     }
 
     /**
@@ -62,10 +59,8 @@ public class EventoDetailDTO extends EventoDTO {
     @Override
     public EventoEntity toEntity() {
         EventoEntity eventoE = super.toEntity();
-//        if (this.xyz != null) {
-        //           eventoE.setXyz(this.xyz.toEntity());
-        //     }
-        return eventoE;
     }
+    return eventoE ;
+}
 
 }
