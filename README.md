@@ -35,9 +35,9 @@ BussinessLogiException con un mensaje donde se especifique cual regla no se cump
 
 Ejecutar el programa y probar en postman el servicio:
 
-POST localhost:8080/eventos-web/api/eventos
+`POST localhost:8080/eventos-web/api/eventos`
 
-a. Ingresar el siguiente json;
+a. Ingresar el siguiente json: 
 
 ```{ 
   "name": "El hombre Elefante",
