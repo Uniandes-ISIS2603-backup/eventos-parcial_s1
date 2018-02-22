@@ -1,10 +1,9 @@
 # Instrucciones
 
-1. clone el eventos-parcial_s1 en Netbeans
 
-2. Abra los proyectos
+1. Abra los proyectos en Netbeans
 
-3. En Netbeans Vaya a Services, Databases, JavaDB y cree una base de datos que se llame eventoDB (los dem´s campos dejelos en blanco)
+2. En Netbeans Vaya a Services, Databases, JavaDB y cree una base de datos que se llame eventoDB (los dem´s campos dejelos en blanco)
 
 Tenemos un Recurso Evento que representa los eventos que suceden en una ciudad. 
 De cada evento se conoce su nombre y su tipo (ambos String) y se tiene un campo 
